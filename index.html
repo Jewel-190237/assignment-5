@@ -24,60 +24,73 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 font-medium text-xl rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="btn btn-ghost pl-0 text-4xl font-extrabold">P-Ticket</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center font-medium text-xl hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn">Button
+                <div class="navbar-end ">
+                    <a class="btn text-xl font-bold text-[#1DD100]">Bus
                         <img src="images/bus-icon.png">
                     </a>
                 </div>
             </div>
         </nav>
         <!-- Nav end -->
-        <!-- Banner Start -->
-        <div class="relative">
-            <img class="w-full" src="images/banner.png" />
-            <h1 class="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                Sling Academy</h1>
-            <h3 class="absolute text-2xl text-blue-300 top-5 left-5">Top Left</h3>
 
+
+        <!-- Banner Start -->
+        <div class="relative text-center">
+            <img class="w-full" src="images/banner.png" />
+            <h1 class="absolute text-5xl font-extrabold text-white top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                End-to-End Travel with <br> <span class=" text-[#1DD100]">P Paribahan</span> </h1>
+            <p class="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white ">Yes, you can run unit
+                tests and view the results directly within the app. <br> The integrated testing features allow for a
+                streamlined .</p>
+            <button
+                class="absolute bottom-36 left-1/2  p-4 rounded-2xl bg-[#1DD100] text-black font-bold text-xl -translate-x-1/2 -translate-y-1/2">Buy
+                Tickets</button>
             <div class="relative flex gap-3 items-center justify-center">
                 <!-- card 1 -->
-                <div
-                    class="absolute -top-7 right-7 card card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
+                <div class="absolute -top-10 left-28 card px-4 card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
                     <figure><img src="images/people.png" alt="Movie" /></figure>
                     <div class="card-body">
-                        <p>Click the button</p>
+                        <h1 class="font-bold text-3xl text-black mr-0">500K+</h1>
+                        <p>Registered users</p>
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="absolute -top-7 card card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
-                    <figure><img src="images/people.png" alt="Movie" /></figure>
+                <div class="absolute -top-10 card px-4 card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
+                    <figure><img src="images/ticket-cupon.png" alt="Movie" /></figure>
                     <div class="card-body">
-                        <p>Click the button</p>
+                        <h1 class="font-bold text-3xl text-black mr-0">1.7 lacks</h1>
+                        <p>Tickets sold</p>
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="absolute -top-7 left-7 card card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
-                    <figure><img src="images/people.png" alt="Movie" /></figure>
+                <div
+                    class="absolute -top-10 right-28 card px-4 card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
+                    <figure><img src="images/stoppage.png" alt="Movie" /></figure>
                     <div class="card-body">
-                        <p>Click the button</p>
+                        <h1 class="font-bold text-3xl text-black mr-0">80K+</h1>
+                        <p>Rental partners</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Banner end -->
+        <!-- Nav end -->
         <!-- Offer Start -->
         <section class="pt-32 text-center">
             <h3 class="text-3xl">Best offers for you</h3>
@@ -90,17 +103,16 @@
                     </div>
                 </div>
                 <!-- 20% off -->
-                <div class="card w-[540px] h-40 bg-[#F78C9C] text-primary-content flex">
-                    <div class="relative">
-                        <img class="w-9 absolute right-40" src="images/cupon-devider.png" alt="">
-                    </div>
+                <div class=" relative card w-[540px] h-40 bg-[#F78C9C] text-primary-content flex justify-between">
+                    <img class="w-9 absolute right-40" src="images/cupon-devider.png">
                     <div class="w-3/5">
                         <h1 class="text-5xl text-black mt-8">20% OFF</h1>
                         <p class="text-black text-xl">on your next purchase</p>
                         <p class="text-[#03071280]">use by January 2024</p>
                     </div>
                     <div class="w-2/5">
-
+                        <h3>Couple 20</h3>
+                        <p>Coupon Code</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +124,8 @@
     <main class="bg-[#F7F8F8]">
         <div class="mt-8 mx-28">
             <h1 class="text-6xl text-center pt-8">P.H Paribahan</h1>
-            <p class="text-center w-full pt-6 ">Yes, you can run unit tests and view the results directly within the app. The
+            <p class="text-center w-full pt-6 ">Yes, you can run unit tests and view the results directly within the
+                app. The
                 integrated <br> testing features allow for a streamlined .</p>
             <div class="rounded-2xl relative w-full h-[290px] bg-[#FFFFFF] text-primary-content my-12 flex">
                 <img class="w-14 absolute right-48" src="images/info-devider.png">
