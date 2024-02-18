@@ -49,8 +49,6 @@
             </div>
         </nav>
         <!-- Nav end -->
-
-
         <!-- Banner Start -->
         <div class="relative text-center">
             <img class="w-full" src="images/banner.png" />
@@ -59,12 +57,11 @@
             <p class="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white ">Yes, you can run unit
                 tests and view the results directly within the app. <br> The integrated testing features allow for a
                 streamlined .</p>
-            <button
-                class="absolute bottom-36 left-1/2  p-4 rounded-2xl bg-[#1DD100] text-black font-bold text-xl -translate-x-1/2 -translate-y-1/2">Buy
-                Tickets</button>
+            <a href="#paribahan"><button class="absolute bottom-36 left-1/2  p-4 rounded-2xl bg-[#1DD100] text-black font-bold text-xl -translate-x-1/2 -translate-y-1/2"> <span id="ticket">Buy Tickets</span></button></a>
             <div class="relative flex gap-3 items-center justify-center">
                 <!-- card 1 -->
-                <div class="absolute -top-10 left-28 card px-4 card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
+                <div
+                    class="absolute -top-10 left-28 card px-4 card-side bg-base-100 shadow-2xl border-b-green-800 border-b-4">
                     <figure><img src="images/people.png" alt="Movie" /></figure>
                     <div class="card-body">
                         <h1 class="font-bold text-3xl text-black mr-0">500K+</h1>
@@ -92,36 +89,50 @@
         </div>
         <!-- Nav end -->
         <!-- Offer Start -->
-        <section class="pt-32 text-center">
-            <h3 class="text-3xl">Best offers for you</h3>
-            <div class="flex gap-8 justify-between my-8 ">
+        <section class="pt-48 text-center">
+            <h3 class="text-4xl font-bold">Best offers for you</h3>
+            <div class="flex flex-col lg:flex-row gap-8 justify-between my-8 ">
                 <!-- 15% off -->
-                <div class="card w-[540px] h-40 bg-[#FFBF0F] text-primary-content">
+                <div class="card w-[600px] h-40 bg-[#FFBF0F] text-primary-content">
                     <div class="relative">
-                        <img class="w-9 absolute right-40" src="images/cupon-devider.png" alt="">
+                        <img class="w-9 absolute right-52" src="images/cupon-devider.png" alt="">
 
+                    </div>
+                    <div class="relative right-40 top-8">
+                        <h1 class="font-bold text-black text-4xl">15% OFF </h1>
+                        <h4 class="text-black pl-4">On your next purchase</h4>
+                        <p class=" text-slate-700">Use by January 2024</p>
+                    </div>
+                    <div class="relative left-44 bottom-10">
+                        <h1 class="font-bold text-black text-4xl"> NEW15 </h1>
+
+                        <p class=" text-slate-700">Coupon Code</p>
                     </div>
                 </div>
                 <!-- 20% off -->
-                <div class=" relative card w-[540px] h-40 bg-[#F78C9C] text-primary-content flex justify-between">
-                    <img class="w-9 absolute right-40" src="images/cupon-devider.png">
-                    <div class="w-3/5">
-                        <h1 class="text-5xl text-black mt-8">20% OFF</h1>
-                        <p class="text-black text-xl">on your next purchase</p>
-                        <p class="text-[#03071280]">use by January 2024</p>
+                <div class="card  w-[600px] h-40 bg-[#F78C9C] text-primary-content">
+                    <div class="relative">
+                        <img class="w-9 absolute right-52" src="images/cupon-devider.png" alt="">
+
                     </div>
-                    <div class="w-2/5">
-                        <h3>Couple 20</h3>
-                        <p>Coupon Code</p>
+                    <div class="relative right-40 top-8">
+                        <h1 class="font-bold text-black text-4xl">20% OFF </h1>
+                        <h4 class="text-black pl-4">On your next purchase</h4>
+                        <p class=" text-slate-700">Use by January 2024</p>
+                    </div>
+                    <div class="relative left-44 bottom-10">
+                        <h1 class="font-bold text-black text-4xl">Couple 20</h1>
+
+                        <p class=" text-slate-700">Coupon Code</p>
                     </div>
                 </div>
             </div>
-            <button class="m-10 btn btn-outline btn-success">See All Offers</button>
+            <button class="m-10 btn btn-outline border-[#1DD100] btn-success">See All Offers</button>
         </section>
         <!-- Offer end -->
     </header>
     <!--Paribahan Description -->
-    <main class="bg-[#F7F8F8]">
+    <main id="paribahan" class="bg-[#F7F8F8]">
         <div class="mt-8 mx-28">
             <h1 class="text-6xl text-center pt-8">P.H Paribahan</h1>
             <p class="text-center w-full pt-6 ">Yes, you can run unit tests and view the results directly within the
@@ -145,7 +156,7 @@
                         <div class="hero-content flex-col lg:flex-row bg-[#1DD10026] rounded-xl mt-4">
                             <img src="images/seat-green-filled.png" />
                             <div>
-                                <h1 class="text-[#1DD100] font-bold"><span>40 </span>Seat Left</h1>
+                                <h1 class="text-[#1DD100] font-bold"><span id="seat-count">40 </span> Seat Left</h1>
                             </div>
                         </div>
                     </div>
@@ -199,40 +210,40 @@
                 <section class="grid grid-cols-5 gap-3 py-4 pr-4">
                     <!-- <button class="btn btn-xs lg:btn-lg row-span-4">A1</button> -->
                     <button class="pl-7">A</button>
-                    <button class="btn btn-xs lg:btn-lg">A1</button>
-                    <button class="btn btn-xs lg:btn-lg">A3</button>
-                    <button class="btn btn-xs lg:btn-lg">A4</button>
-                    <button class="btn btn-xs lg:btn-lg">A4</button>
+                    <button onclick="buyTicket()" id="A1" class="btn btn-xs lg:btn-lg">A1</button>
+                    <button onclick="buyTicket()" id="A2" class="btn btn-xs lg:btn-lg">A2</button>
+                    <button onclick="buyTicket()" id="A3" class="btn btn-xs lg:btn-lg">A3</button>
+                    <button onclick="buyTicket()" id="A4" class="btn btn-xs lg:btn-lg">A4</button>
                     <button class="pl-7">B</button>
-                    <button class="btn btn-xs lg:btn-lg">B1</button>
-                    <button class="btn btn-xs lg:btn-lg">B2</button>
-                    <button class="btn btn-xs lg:btn-lg">B3</button>
-                    <button class="btn btn-xs lg:btn-lg">B4</button>
+                    <button onclick="buyTicket()" id="B1" class="btn btn-xs lg:btn-lg">B1</button>
+                    <button onclick="buyTicket()" id="B2" class="btn btn-xs lg:btn-lg">B2</button>
+                    <button onclick="buyTicket()" id="B3" class="btn btn-xs lg:btn-lg">B3</button>
+                    <button onclick="buyTicket()" id="B4" class="btn btn-xs lg:btn-lg">B4</button>
                     <button class="pl-7">C</button>
-                    <button class="btn btn-xs lg:btn-lg">C1</button>
-                    <button class="btn btn-xs lg:btn-lg">C2</button>
-                    <button class="btn btn-xs lg:btn-lg">C3</button>
-                    <button class="btn btn-xs lg:btn-lg">C4</button>
+                    <button onclick="buyTicket()" id="C1" class="btn btn-xs lg:btn-lg">C1</button>
+                    <button onclick="buyTicket()" id="C2" class="btn btn-xs lg:btn-lg">C2</button>
+                    <button onclick="buyTicket()" id="C3" class="btn btn-xs lg:btn-lg">C3</button>
+                    <button onclick="buyTicket()" id="C4" class="btn btn-xs lg:btn-lg">C4</button>
                     <button class="pl-7">D</button>
-                    <button class="btn btn-xs lg:btn-lg">D1</button>
-                    <button class="btn btn-xs lg:btn-lg">D2</button>
-                    <button class="btn btn-xs lg:btn-lg">D3</button>
-                    <button class="btn btn-xs lg:btn-lg">D4</button>
+                    <button onclick="buyTicket()" id="D1" class="btn btn-xs lg:btn-lg">D1</button>
+                    <button onclick="buyTicket()" id="D2" class="btn btn-xs lg:btn-lg">D2</button>
+                    <button onclick="buyTicket()" id="D3" class="btn btn-xs lg:btn-lg">D3</button>
+                    <button onclick="buyTicket()" id="D4" class="btn btn-xs lg:btn-lg">D4</button>
                     <button class="pl-7">E</button>
-                    <button class="btn btn-xs lg:btn-lg">E1</button>
-                    <button class="btn btn-xs lg:btn-lg">E2</button>
-                    <button class="btn btn-xs lg:btn-lg">E3</button>
-                    <button class="btn btn-xs lg:btn-lg">E4</button>
+                    <button onclick="buyTicket()" id="E1" class="btn btn-xs lg:btn-lg">E1</button>
+                    <button onclick="buyTicket()" id="E2" class="btn btn-xs lg:btn-lg">E2</button>
+                    <button onclick="buyTicket()" id="E3" class="btn btn-xs lg:btn-lg">E3</button>
+                    <button onclick="buyTicket()" id="E4" class="btn btn-xs lg:btn-lg">E4</button>
                     <button class="pl-7">F</button>
-                    <button class="btn btn-xs lg:btn-lg">F1</button>
-                    <button class="btn btn-xs lg:btn-lg">F2</button>
-                    <button class="btn btn-xs lg:btn-lg">F3</button>
-                    <button class="btn btn-xs lg:btn-lg">F4</button>
+                    <button onclick="buyTicket()" id="F1" class="btn btn-xs lg:btn-lg">F1</button>
+                    <button onclick="buyTicket()" id="F2" class="btn btn-xs lg:btn-lg">F2</button>
+                    <button onclick="buyTicket()" id="F3" class="btn btn-xs lg:btn-lg">F3</button>
+                    <button onclick="buyTicket()" id="F4" class="btn btn-xs lg:btn-lg">F4</button>
                     <button class="pl-7">J</button>
-                    <button class="btn btn-xs lg:btn-lg">J1</button>
-                    <button class="btn btn-xs lg:btn-lg">J2</button>
-                    <button class="btn btn-xs lg:btn-lg">J3</button>
-                    <button class="btn btn-xs lg:btn-lg">J4</button>
+                    <button onclick="buyTicket()" id="J1" class="btn btn-xs lg:btn-lg">J1</button>
+                    <button onclick="buyTicket()" id="J2" class="btn btn-xs lg:btn-lg">J2</button>
+                    <button onclick="buyTicket()" id="J3" class="btn btn-xs lg:btn-lg">J3</button>
+                    <button onclick="buyTicket()" id="J4" class="btn btn-xs lg:btn-lg">J4</button>
                 </section>
             </section>
             <!-- Form Section -->
@@ -251,22 +262,34 @@
                             </thead>
                             <tbody>
                                 <!-- row 1 -->
-                                <tr class="text-[#03071299]">
-                                    <td>C2</td>
+                                <tr id="seat-1" class="text-[#03071299] hidden">
+                                    <td id="seat-name1">C2</td>
                                     <td>Economoy</td>
                                     <td>550</td>
                                 </tr>
                                 <!-- row 2 -->
-                                <tr class="text-[#03071299]">
-                                    <td>C2</td>
+                                <tr id="seat-2" class="text-[#03071299] hidden">
+                                    <td id="seat-name2">C2</td>
                                     <td>Economoy</td>
                                     <td>550</td>
                                 </tr>
                                 <!-- row 3 -->
-                                <tr class="text-black">
+                                <tr id="seat-3" class="text-[#03071299] hidden">
+                                    <td id="seat-name3">C2</td>
+                                    <td>Economoy</td>
+                                    <td>550</td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr id="seat-4" class="text-[#03071299] hidden">
+                                    <td id="seat-name4">C2</td>
+                                    <td>Economoy</td>
+                                    <td>550</td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr id="final-info" class="text-black hidden">
                                     <td>Total Prices</td>
                                     <td></td>
-                                    <td>BDT 1100</td>
+                                    <td>BDT <span id="total-taka">1100</span></td>
                             </tbody>
                         </table>
                     </div>
@@ -286,12 +309,12 @@
                     </div>
                     <input type="text" placeholder="Enter Your Name" class="input input-bordered w-[430px]" />
                 </label>
-                <label>
+                <label >
                     <div class="label">
                         <span class="label-text font-bold">Mobile Number</span>
                     </div>
                     <input type="number" placeholder="Enter Your Mobile Number"
-                        class="input input-bordered w-[430px]" />
+                        class="input input-bordered w-[430px]"/>
                 </label>
                 <label>
                     <div class="label">
@@ -301,7 +324,7 @@
                 </label>
 
                 <!--Button -->
-                <button class="btn my-4 w-[430px] bg-[#1DD100]">Next</button>
+                <button id="next-button" class="btn my-4 w-[430px] bg-[#1DD100] hidden">Next</button>
 
                 <div class="flex justify-between">
                     <a href=""><u>Terms and Conditions</u></a>
@@ -310,10 +333,36 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="p-10 bg-neutral text-neutral-content mt-20">
+        <div class="flex justify-between ">
+            <div>
+                <h1 class="font-bold text-3xl">P-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
 
+            <div class="flex flex-col gap-4 mr-20 mb-10">
+                <p class="text-2xl">Download our app</p>
+                <div class="flex gap-5 border-[2px] border-white rounded-xl p-3">
+                    <a><img src="images/playstore.png" alt=""></a>
+                    <h3>Get in one <br> <span class="text-3xl">Google Play</span></h3>
+
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="flex justify-between mt-5 mb-20">
+            <p>@all rights reserved, P-Ticket services limited.2024</p>
+
+            <div class="flex text-xl gap-5 ">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
     </footer>
-
+    <script src="script/index.js"></script>
 </body>
 
 </html>
