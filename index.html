@@ -83,49 +83,77 @@
             <h3 class="text-3xl">Best offers for you</h3>
             <div class="flex gap-8 justify-between my-8 ">
                 <!-- 15% off -->
-                <div class="card w-[540px] h-40 bg-primary text-primary-content">
+                <div class="card w-[540px] h-40 bg-[#FFBF0F] text-primary-content">
                     <div class="relative">
-                        <img class="w-9 absolute left-40" src="images/cupon-devider.png" alt="">
+                        <img class="w-9 absolute right-40" src="images/cupon-devider.png" alt="">
 
                     </div>
                 </div>
                 <!-- 20% off -->
-                <div class="card w-[540px] h-40 bg-primary text-primary-content">
+                <div class="card w-[540px] h-40 bg-[#F78C9C] text-primary-content flex">
                     <div class="relative">
-                        <img class="w-9 absolute left-40" src="images/cupon-devider.png" alt="">
+                        <img class="w-9 absolute right-40" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="text-5xl text-black mt-8">20% OFF</h1>
+                        <p class="text-black text-xl">on your next purchase</p>
+                        <p class="text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="w-2/5">
 
                     </div>
                 </div>
             </div>
-            <button class="m-10 btn btn-outline btn-success">Success</button>
+            <button class="m-10 btn btn-outline btn-success">See All Offers</button>
         </section>
         <!-- Offer end -->
     </header>
     <!--Paribahan Description -->
     <main class="bg-[#F7F8F8]">
         <div class="mt-8 mx-28">
-            <h1 class="text-6xl text-center">P.H Paribahan</h1>
-            <p class="text-center w-full">Yes, you can run unit tests and view the results directly within the app. The
-                integrated testing features allow for a streamlined .</p>
-            <div class="relative w-full h-[188px] bg-[#FFFFFF] text-primary-content my-12 flex">
-                    <img class="w-9 absolute right-48" src="images/info-devider.png">
-                <section class="w-4/5">
-                    <div>
-                        <div class="flex justify-between">
-                            <div>
-                                <div class="hero">
-                                    <div class="hero-content flex-col lg:flex-row">
-                                        <img src="images/bus-logo.png" class="max-w-sm rounded-lg shadow-2xl" />
-                                        <div>
-                                            <h1 class="text-2xl font-bold">Box Office News!</h1>
-                                        </div>
-                                    </div>
+            <h1 class="text-6xl text-center pt-8">P.H Paribahan</h1>
+            <p class="text-center w-full pt-6 ">Yes, you can run unit tests and view the results directly within the app. The
+                integrated <br> testing features allow for a streamlined .</p>
+            <div class="rounded-2xl relative w-full h-[290px] bg-[#FFFFFF] text-primary-content my-12 flex">
+                <img class="w-14 absolute right-48" src="images/info-devider.png">
+                <section class="w-4/5 mr-12">
+                    <div class="flex justify-between">
+                        <!-- Paribahan Info -->
+                        <div>
+                            <div class="hero-content flex-col lg:flex-row">
+                                <img src="images/bus-logo.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <h1 class="text-2xl font-bold text-black">Greenline Paribahan</h1>
+                                    <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- seat left -->
+                        <div class="hero-content flex-col lg:flex-row bg-[#1DD10026] rounded-xl mt-4">
+                            <img src="images/seat-green-filled.png" />
+                            <div>
+                                <h1 class="text-[#1DD100] font-bold"><span>40 </span>Seat Left</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- route, and departure info -->
+                    <div class="h-40 bg-[#F7F8F8] rounded-2xl ml-4 mt-4">
+                        <div class="flex justify-between text-black ">
+                            <p class="px-4 py-2">Route</p>
+                            <p class="px-4 py-2 font-bold">Dhaka-Sylhet</p>
+                        </div>
+                        <div class="flex justify-between text-black ">
+                            <p class="px-4 py-2 ">Departure Time</p>
+                            <p class="px-4 py-2 font-bold">9:00 PM</p>
+                        </div>
+                        <div class="flex justify-between gap-4 text-black p-4">
+                            <p class="bg-[#0307120D] p-2 rounded-xl">Boarding Point - Laxmipur</p>
+                            <p class="bg-[#0307120D] p-2 rounded-xl">Dropping Point - Bogura</p>
+                            <p class="bg-[#0307120D] p-2 rounded-xl">Est. Time - 11 Hour</p>
+                        </div>
                     </div>
                 </section>
-                <section class="w-1/5 pt-8">
+                <section class="w-1/5 pt-24">
                     <div class="flex flex-col justify-center items-center">
                         <img class="w-10" src="images/fare.png">
                         <h2 class="text-black text-2xl font-bold">550 Taka</h2>
@@ -134,7 +162,6 @@
                 </section>
             </div>
         </div>
-
         <div class="bg-[#FFFFFF] mt-8 mx-28 flex p-4 rounded-2xl">
             <!-- Seat section -->
             <section class="w-3/5 divide-x-2 divide-x-reverse divide-green-950 divide-dotted ">
