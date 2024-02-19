@@ -14,23 +14,34 @@ function handleKeyboardButtonPress(event) {
         nextWork(pressButton)
 
         seatCount++;
-        if (seatCount == 1) {
-            showSeat1(pressButton);
-            calculateTaka(550);
-            totalInfo();
-        }
-        if (seatCount == 2) {
-            showSeat2(pressButton);
-            calculateTaka(550);
-        }
-        if (seatCount == 3) {
-            showSeat3(pressButton);
-            calculateTaka(550);
-        }
-        if (seatCount == 4) {
-            showSeat4(pressButton);
-            calculateTaka(550);
-        }
+    if (seatCount === 1) {
+        showSeat1(pressButton);
+        calculateTaka(550); // Add 550 to the total
+        totalInfo(total);
+        grandTotal(total);
+    }
+        
+    
+    if (seatCount === 2) {
+        showSeat2(pressButton);
+        calculateTaka(550); // Add 550 to the total
+        totalInfo(total);
+        grandTotal(total);
+       
+    }
+    if (seatCount === 3) {
+        showSeat3(pressButton);
+        calculateTaka(550); // Add 550 to the total
+        totalInfo(total);
+        grandTotal(total);
+    }
+    if (seatCount === 4) {
+        showSeat4(pressButton);
+        calculateTaka(550); // Add 550 to the total
+        totalInfo(total);
+        grandTotal(total);
+        handleCouponInput();
+    }
     }
     }
 
@@ -78,21 +89,74 @@ function showSeat4(seatName) {
     const element = document.getElementById('seat-name4');
     element.innerText = seatName;
 }
-function totalInfo() {
+
+function totalInfo(total) {
     const finalInfo = document.getElementById('final-info');
     finalInfo.classList.remove('hidden');
-}
+    const element = document.getElementById('total-taka');
+    element.innerText = total;
 
-let total = 0;
-function calculateTaka(value) {
+
+//     const grandTotal= element.innerText;
+   }
+   function grandTotal(total){
+    const element2=document.getElementById('grand-total');
+    element2.innerText = total;
+   }
+  
+  let total = 0;
+  
+  function calculateTaka(value) {
     total = total + value;
-    showTaka(total);
+    return total;
+  }
+
+  function seatCountShow(value){
+    const element = document.getElementById('seat-number');
+    element.innerText = value;
+    element.classList.remove('hidden');
+}
+// cuPhone
+
+
+
+
+// // Function to handle input event
+function handleCouponInput() {
+    const couponInput = document.getElementById('haveCoupon');
+    const couponCode = couponInput.value.trim(); // Get the entered coupon code and trim any leading or trailing spaces
+    
+    // Check if the entered coupon code is valid
+    if (couponCode === 'NEW15') {
+        const discount = total * 0.15;
+        const finalTaka = total - discount;
+        applyInfo(finalTaka); // Update the grand total with discounted amount
+    } else if (couponCode === 'Couple 20') {
+        const discount = total * 0.20;
+        const finalTaka = total - discount;
+        applyInfo(finalTaka); // Update the grand total with discounted amount
+    } else {
+        
+        applyInfo(total);
+        // alert('You have no coupon so be quite');
+    }
 }
 
-function showTaka(value) {
-    const totalTaka = document.getElementById('total-taka');
-    totalTaka.innerText = value;
+// Function to update grand total
+function applyInfo(total) {
+    const finalInfo = document.getElementById('apply-info');
+    finalInfo.classList.remove('hidden');
+    const element = document.getElementById('grand-total');
+    element.innerText = total;
 }
+
+
+
+// Add event listener to the coupon input field
+
+document.getElementById('haveCoupon').addEventListener('click', handleCouponInput);
+
+
 
 function seatCountShow(value){
     const element = document.getElementById('seat-number');
@@ -106,16 +170,17 @@ function nextWork(idValue){
 
     const seatText = document.getElementById(idValue);
     const seatValue = seatText.innerText;
-
-    if((elementText.length == 11) && (seatValue.length > 0)){
-
-        const elementText = document.getElementById('next-button')
-        elementText.classList.add('hidden');
-        
-        const elementValue = document.getElementById('open-success');
-        elementValue.classList.remove('hidden');
-    }
 }
+
+//     if((elementText.length == 11) && (seatValue.length > 0)){
+
+//         const elementText = document.getElementById('next-button')
+//         elementText.classList.add('hidden');
+        
+//         const elementValue = document.getElementById('open-success');
+//         elementValue.classList.remove('hidden');
+//     }
+// }
 
 
 
