@@ -6,8 +6,9 @@ let totalSeat = 41;
 function handleKeyboardButtonPress(event) {
     const pressButton = event.target.id;
 
-    totalSeat--;
-    if ((totalSeat > 36) && (pressButton.length == 2)) {
+    if (pressButton.length == 2){
+        totalSeat--;
+    if(totalSeat > 36) {
         addBackgroundById(pressButton);
 
         nextWork(pressButton)
@@ -31,6 +32,8 @@ function handleKeyboardButtonPress(event) {
             calculateTaka(550);
         }
     }
+    }
+
 }
 let countSeat = 0;
 function addBackgroundById(idElement) {
