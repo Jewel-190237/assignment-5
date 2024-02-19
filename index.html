@@ -313,7 +313,7 @@
                     <div class="label">
                         <span class="label-text font-bold">Mobile Number</span>
                     </div>
-                    <input type="number" placeholder="Enter Your Mobile Number"
+                    <input id="mobile-number" type="number" placeholder="Enter Your Mobile Number"
                         class="input input-bordered w-[430px]"/>
                 </label>
                 <label>
@@ -324,8 +324,10 @@
                 </label>
 
                 <!--Button -->
-                <a href="success.html"><button id="next-button" class="btn my-4 w-[430px] bg-[#1DD100]">Next</button></a>
+                <!-- <a href="success.html"><button onclick="nextWork()" id="next-button" class="btn my-4 w-[430px] bg-[#1DD100]">Next</button></a> -->
+                <button onclick="nextWork()" id="next-button" class="btn my-4 w-[430px] bg-[#1DD100]">Next</button>
 
+                <a id="open-success" class="hidden" href="success.html">  <button class="btn my-4 w-[430px] bg-[#1DD100]">Next</button></a>
                 <div class="flex justify-between">
                     <a href=""><u>Terms and Conditions</u></a>
                     <a href=""><u>Cancellation Policy</u></a>
@@ -345,8 +347,6 @@
                 <div class="flex gap-5 border-[2px] border-white rounded-xl p-3">
                     <a><img src="images/playstore.png" alt=""></a>
                     <h3>Get in one <br> <span class="text-3xl">Google Play</span></h3>
-
-
                 </div>
             </div>
         </div>
