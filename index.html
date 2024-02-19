@@ -294,12 +294,12 @@
                         </table>
                     </div>
                     <label class="input input-bordered flex items-center gap-1 w-80 mx-9 h-14">
-                        <input type="text" class="grow" />
-                        <span class="btn py-2 h-1 bg-[#1DD100]">Apply</span>
+                        <input type="text" id="haveCoupon" class="grow" />
+                        <span onclick=" couponApply()" id="apply-info" class="btn py-2 h-1 bg-[#1DD100]">Apply</span>
                     </label>
                     <div class="flex justify-between text-black mx-10 my-3">
                         <p>Grand Total</p>
-                        <p>BDT 1100</p>
+                        <p id="grand-total">BDT 0</p>
                     </div>
                 </div>
                 <!-- Input form -->
@@ -325,7 +325,7 @@
 
                 <!--Button -->
                 <!-- <a href="success.html"><button onclick="nextWork()" id="next-button" class="btn my-4 w-[430px] bg-[#1DD100]">Next</button></a> -->
-                <button onclick="nextWork()" id="next-button" class="btn my-4 w-[430px] bg-[#1DD100]">Next</button>
+                <!-- <button onclick="nextWork()" id="next-button" class="btn my-4 w-[430px] bg-[#1DD100]">Next</button> -->
 
                 <a id="open-success" class="hidden" href="success.html">  <button class="btn my-4 w-[430px] bg-[#1DD100]">Next</button></a>
                 <div class="flex justify-between">
