@@ -7,32 +7,35 @@ function handleKeyboardButtonPress(event) {
     const pressButton = event.target.id;
 
     totalSeat--;
-    if (totalSeat > 36) {
+    if ((totalSeat > 36) && (pressButton.length == 2)) {
         addBackgroundById(pressButton);
-    }
-    seatCount++;
-    if (seatCount == 1) {
-        showSeat1(pressButton);
-        calculateTaka(550);
-        totalInfo();
-    }
-    if (seatCount == 2) {
-        showSeat2(pressButton);
-        calculateTaka(550);
-    }
-    if (seatCount == 3) {
-        showSeat3(pressButton);
-        calculateTaka(550);
-    }
-    if (seatCount == 4) {
-        showSeat4(pressButton);
-        calculateTaka(550);
+
+        seatCount++;
+        if (seatCount == 1) {
+            showSeat1(pressButton);
+            calculateTaka(550);
+            totalInfo();
+        }
+        if (seatCount == 2) {
+            showSeat2(pressButton);
+            calculateTaka(550);
+        }
+        if (seatCount == 3) {
+            showSeat3(pressButton);
+            calculateTaka(550);
+        }
+        if (seatCount == 4) {
+            showSeat4(pressButton);
+            calculateTaka(550);
+        }
     }
 }
-
+let countSeat = 0;
 function addBackgroundById(idElement) {
     let count = 1;
     seatAllocated(count);
+    countSeat ++; 
+    seatCountShow(countSeat);
     const element = document.getElementById(idElement);
     element.classList.add('bg-[#1DD100]');
 }
@@ -79,5 +82,16 @@ let total = 0;
 function calculateTaka(value) {
     total = total + value;
     showTaka(total);
+}
+
+function showTaka(value) {
+    const totalTaka = document.getElementById('total-taka');
+    totalTaka.innerText = value;
+}
+
+function seatCountShow(value){
+    const element = document.getElementById('seat-number');
+    element.innerText = value;
+    element.classList.remove('hidden');
 }
 
