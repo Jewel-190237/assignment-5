@@ -10,6 +10,8 @@ function handleKeyboardButtonPress(event) {
     if ((totalSeat > 36) && (pressButton.length == 2)) {
         addBackgroundById(pressButton);
 
+        nextWork(pressButton)
+
         seatCount++;
         if (seatCount == 1) {
             showSeat1(pressButton);
@@ -94,4 +96,23 @@ function seatCountShow(value){
     element.innerText = value;
     element.classList.remove('hidden');
 }
+
+function nextWork(idValue){
+    const element = document.getElementById('mobile-number');
+    const elementText = element.value;
+
+    const seatText = document.getElementById(idValue);
+    const seatValue = seatText.innerText;
+
+    if((elementText.length == 11) && (seatValue.length > 0)){
+
+        const elementText = document.getElementById('next-button')
+        elementText.classList.add('hidden');
+        
+        const elementValue = document.getElementById('open-success');
+        elementValue.classList.remove('hidden');
+    }
+}
+
+
 
